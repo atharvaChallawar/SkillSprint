@@ -25,10 +25,10 @@ function Login() {
       <form onSubmit={handleSubmit}>
         <div>
           <label>
-            Email: <input type="email" name="email" value={inputs.email} onChange={handleChange}/>
+            Email: <input type="email" name="email" value={inputs.email} onChange={handleChange}/><br/>
           </label>
           <label>
-            Password: <input type="password" name="password" value={inputs.password} onChange={handleChange}/>
+            Password: <input type="password" name="password" value={inputs.password} onChange={handleChange}/><br/>
           </label>
         </div>
         <button type="submit">Submit</button>
