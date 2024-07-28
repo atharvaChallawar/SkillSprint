@@ -1,14 +1,47 @@
-import React from "react";
-function signup(){
-    return(<div>
-        <h1>Sign Up</h1>
-        <form>
-            name :<input type="text"></input><br/>
-            email :<input type="email"></input><br/>
-            password :<input type="password"></input><br/>
-            comfirm password :<input type="password"></input><br/>
-            <button type="submit">submit</button>
-        </form>
-    </div>);
+import React, { useState } from "react";
+
+function Signup() {
+  const [inputs, setInputs] = useState({
+    name: '',
+    email: '',
+    password: ''
+  });
+
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+    setInputs({
+      ...inputs,
+      [name]: value
+    });
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    console.log('Form submitted:', inputs);
+  };
+
+  return (
+    <div>
+      <h1>Sign Up</h1>
+      <form onSubmit={handleSubmit}>
+        <div>
+          <label>
+            Name: <input type="text" name="name" value={inputs.name} onChange={handleChange}/>
+          </label>
+          <label>
+            Email: <input type="email" name="email" value={inputs.email} onChange={handleChange}/>
+          </label>
+          <label> 
+            Password: <input type="password" name="password" value={inputs.password} onChange={handleChange} />
+          </label>
+          <label>
+            Confirm Password:<input type="password" name="confirmPassword" onChange={handleChange}/>
+          </label>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  );
 }
-export default signup;
+
+export default Signup;
