@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/SkillSprint/static/css/main.4c9f1914.css",
-    "main.js": "/SkillSprint/static/js/main.1bf3ea3c.js",
+    "main.js": "/SkillSprint/static/js/main.1cec3760.js",
     "static/js/453.bb828c5d.chunk.js": "/SkillSprint/static/js/453.bb828c5d.chunk.js",
     "static/media/logo.svg": "/SkillSprint/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/SkillSprint/index.html",
     "main.4c9f1914.css.map": "/SkillSprint/static/css/main.4c9f1914.css.map",
-    "main.1bf3ea3c.js.map": "/SkillSprint/static/js/main.1bf3ea3c.js.map",
+    "main.1cec3760.js.map": "/SkillSprint/static/js/main.1cec3760.js.map",
     "453.bb828c5d.chunk.js.map": "/SkillSprint/static/js/453.bb828c5d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4c9f1914.css",
-    "static/js/main.1bf3ea3c.js"
+    "static/js/main.1cec3760.js"
   ]
 }
